@@ -17,12 +17,6 @@ it('can creat new post', function(done){
   // The correct code is "redirect"
   });
     });
-  it('get chat history', function(done){
-        models.Post.findAll({include: {model: models.User, as: 'User'}}).then(function(post){
-      assert.equal('HelloWorld', post[0].content);
-      done();
-    });
-  });
 });
 describe ('create new post', function(){
 it('can creat new post', function(done){
